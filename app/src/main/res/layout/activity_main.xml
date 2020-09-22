@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/carbon_black_87"
+    tools:context=".MainActivity">
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/WelcomeText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textSize="@dimen/_16sdp"
+        android:text="Welcome To Movie"
+        android:fontFamily="@font/ubantu_r"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </com.google.android.material.textview.MaterialTextView>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/TabLayout"
+        android:layout_below="@+id/WelcomeText"
+        android:elevation="0.1dp"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:tabIndicatorColor="@android:color/white"
+        app:tabSelectedTextColor="@android:color/white"
+        android:background="@null"
+        app:tabTextColor="@color/carbon_white_50"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.tabs.TabItem
+            android:text="@string/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </com.google.android.material.tabs.TabItem>
+
+        <com.google.android.material.tabs.TabItem
+            android:text="@string/shows"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </com.google.android.material.tabs.TabItem>
+
+        <com.google.android.material.tabs.TabItem
+            android:text="@string/movies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </com.google.android.material.tabs.TabItem>
+
+        <com.google.android.material.tabs.TabItem
+            android:text="@string/kids"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </com.google.android.material.tabs.TabItem>
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/TabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp">
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/BannerViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.viewpager.widget.ViewPager>
+
+
+        <com.google.android.material.tabs.TabLayout
+            app:tabBackground="@drawable/indicator_selector"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/tab_indicator"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:background="@null"
+            app:tabIndicatorHeight="0dp"
+            app:tabMaxWidth="@dimen/_15sdp"
+            android:layout_height="wrap_content">
+
+        </com.google.android.material.tabs.TabLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
