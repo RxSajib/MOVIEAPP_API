@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_margin="@dimen/_5sdp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textview.MaterialTextView
+            android:textSize="@dimen/_15sdp"
+            android:id="@+id/CatagoryName"
+            android:fontFamily="@font/ubantu_r"
+            android:textColor="@android:color/white"
+            android:text="Catagroy Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </com.google.android.material.textview.MaterialTextView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/CatagoryReclyerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

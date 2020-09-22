@@ -65,6 +65,7 @@
     </com.google.android.material.tabs.TabLayout>
 
     <RelativeLayout
+        android:id="@+id/BannerBox"
         android:layout_below="@+id/TabLayout"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_150sdp">
@@ -93,5 +94,16 @@
         </com.google.android.material.tabs.TabLayout>
 
     </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/MainRecylearViewID"
+        android:layout_below="@+id/BannerBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
 
 </RelativeLayout>
